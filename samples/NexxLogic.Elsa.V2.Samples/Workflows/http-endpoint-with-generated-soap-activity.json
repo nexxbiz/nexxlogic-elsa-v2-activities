@@ -1,0 +1,143 @@
+{
+  "$id": "1",
+  "definitionId": "ec43038796c24ab5b993016a12fee5a1",
+  "versionId": "638e5ed5cff24df895993c214512ea5d",
+  "version": 1,
+  "variables": {
+    "$id": "2",
+    "data": {}
+  },
+  "customAttributes": {
+    "$id": "3",
+    "data": {}
+  },
+  "isSingleton": false,
+  "persistenceBehavior": "WorkflowBurst",
+  "deleteCompletedInstances": false,
+  "isPublished": true,
+  "isLatest": true,
+  "createdAt": "2023-01-05T07:51:23.18785Z",
+  "activities": [
+    {
+      "$id": "4",
+      "activityId": "3f1be80b-f39e-40a3-a62b-6e3dc1689ca7",
+      "type": "HttpEndpoint",
+      "displayName": "HTTP Endpoint",
+      "persistWorkflow": false,
+      "loadWorkflowContext": false,
+      "saveWorkflowContext": false,
+      "properties": [
+        {
+          "$id": "5",
+          "name": "Path",
+          "expressions": {
+            "$id": "6",
+            "Literal": "/test"
+          }
+        },
+        {
+          "$id": "7",
+          "name": "Methods",
+          "expressions": {
+            "$id": "8",
+            "Json": "[\"GET\"]"
+          }
+        },
+        {
+          "$id": "9",
+          "name": "ReadContent",
+          "expressions": {
+            "$id": "10"
+          }
+        },
+        {
+          "$id": "11",
+          "name": "TargetType",
+          "expressions": {
+            "$id": "12"
+          }
+        },
+        {
+          "$id": "13",
+          "name": "Schema",
+          "syntax": "Literal",
+          "expressions": {
+            "$id": "14",
+            "Literal": ""
+          }
+        },
+        {
+          "$id": "15",
+          "name": "Authorize",
+          "expressions": {
+            "$id": "16"
+          }
+        },
+        {
+          "$id": "17",
+          "name": "Policy",
+          "expressions": {
+            "$id": "18"
+          }
+        }
+      ],
+      "propertyStorageProviders": {
+        "$id": "19"
+      }
+    },
+    {
+      "$id": "20",
+      "activityId": "735b6272-bb6e-4e88-905a-13d5733c0f7c",
+      "type": "CalculatorSoap-Add",
+      "displayName": "Add",
+      "persistWorkflow": false,
+      "loadWorkflowContext": false,
+      "saveWorkflowContext": false,
+      "properties": [
+        {
+          "$id": "21",
+          "name": "StatusCodesSuccess",
+          "expressions": {
+            "$id": "22"
+          }
+        },
+        {
+          "$id": "23",
+          "name": "SoapVersion",
+          "expressions": {
+            "$id": "24",
+            "Literal": "Soap_11"
+          }
+        },
+        {
+          "$id": "25",
+          "name": "SoapBody",
+          "syntax": "Json",
+          "expressions": {
+            "$id": "26",
+            "Json": "{\n    \"intA\": 5,\n    \"intB\": 200\n}"
+          }
+        },
+        {
+          "$id": "27",
+          "name": "SoapHeader",
+          "expressions": {
+            "$id": "28"
+          }
+        }
+      ],
+      "propertyStorageProviders": {
+        "$id": "29"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "$id": "30",
+      "sourceActivityId": "3f1be80b-f39e-40a3-a62b-6e3dc1689ca7",
+      "targetActivityId": "735b6272-bb6e-4e88-905a-13d5733c0f7c",
+      "outcome": "Done"
+    }
+  ],
+  "id": "638e5ed5cff24df895993c214512ea5d"
+}
