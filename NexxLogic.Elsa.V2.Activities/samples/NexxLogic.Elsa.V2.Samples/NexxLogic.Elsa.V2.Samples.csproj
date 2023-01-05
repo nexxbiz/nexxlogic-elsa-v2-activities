@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Elsa.Activities.Http" Version="2.9.2" />
+        <PackageReference Include="Elsa.Designer.Components.Web" Version="2.9.2" />
+        <PackageReference Include="Elsa.Persistence.EntityFramework.Sqlite" Version="2.9.2" />
+        <PackageReference Include="Elsa.Server.Api" Version="2.9.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\NexxLogic.Elsa.V2.Activities.SoapConnector\NexxLogic.Elsa.V2.Activities.SoapConnector.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Workflows" />
+    </ItemGroup>
+
+</Project>

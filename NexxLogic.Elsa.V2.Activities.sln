@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{798B3050-CF60-4E5F-952C-4BA5B00C3F66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexxLogic.Elsa.V2.Activities.SoapConnector", "NexxLogic.Elsa.V2.Activities\src\NexxLogic.Elsa.V2.Activities.SoapConnector\NexxLogic.Elsa.V2.Activities.SoapConnector.csproj", "{64F775C9-5A6F-429F-A5A0-AAB568CB9BBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{29213032-57B9-4418-B548-89579635B306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexxLogic.Elsa.V2.Samples", "NexxLogic.Elsa.V2.Activities\samples\NexxLogic.Elsa.V2.Samples\NexxLogic.Elsa.V2.Samples.csproj", "{640CA66B-CBDA-4069-A0DD-9555C685676E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64F775C9-5A6F-429F-A5A0-AAB568CB9BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F775C9-5A6F-429F-A5A0-AAB568CB9BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F775C9-5A6F-429F-A5A0-AAB568CB9BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F775C9-5A6F-429F-A5A0-AAB568CB9BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640CA66B-CBDA-4069-A0DD-9555C685676E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640CA66B-CBDA-4069-A0DD-9555C685676E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640CA66B-CBDA-4069-A0DD-9555C685676E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640CA66B-CBDA-4069-A0DD-9555C685676E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64F775C9-5A6F-429F-A5A0-AAB568CB9BBD} = {798B3050-CF60-4E5F-952C-4BA5B00C3F66}
+		{640CA66B-CBDA-4069-A0DD-9555C685676E} = {29213032-57B9-4418-B548-89579635B306}
+	EndGlobalSection
+EndGlobal
